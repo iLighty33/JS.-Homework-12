@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS. Homework 12</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="myWindow">
+        <div class="myWindowView"></div>
+        <div class="myWindowMessage">
+            <form action="#" id="myMessage" method="post" name="myForm">
+                <div class="myWindowsMessageTitle">
+                    <h2>Add a new message</h2>
+                </div>        
+                <div class="myMessage-box">
+                    <div class="userName">
+                        <div class="myMessageName">
+                            <label for="name">Your name:</label>
+                        </div>
+                        <div class="myMessageText">
+                            <input placeholder="Ваше имя" type="text" name="name" id="myMessageText-Name" required>
+                        </div>
+                    </div>
+                    <div class="myMessageText">
+                        <div class="myMessageTextLabel">
+                            <laber for="message">Your message:</laber>
+                        </div>
+                        <div class="myMessageText-Input">
+                            <textarea placeholder="Ваше сообщение" name = "message" id="myMessageText-Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="myButton">
+                <button type="submit" id="myMessageSender" disabled="true">Send</button>
+            </div>
+        </div>  
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>

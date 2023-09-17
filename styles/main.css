@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* === VARIABLES === */
+
+:root {
+    --myFont: bisque;
+}
+
+/* === WINDOW VIEW SETTINGS === */
+
+.myWindow {
+    width: 100vw;
+    height: 100vh;
+
+    border: 1px solid black;
+    background-color: var(--myFont);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.myWindowView {
+    width: 100%;
+    max-height: 70%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+}
+
+.myWindowMessage{
+    padding: 10px;
+    margin: 10px;
+
+    width: 97%;
+    height: 25%;
+
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    bottom: 20px;
+    z-index: 10;
+}
+
+.myWindowsMessageTitle {
+    margin: 8px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.myMessage-box {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.userName {
+    display: flex;
+}
+
+.myMessageName {
+    width: 15%;
+
+}
+
+.myMessageText {
+    padding-top: 8px;
+    padding-right: 10px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.myMessageTextLabel {
+    width: 15%;
+}
+
+.myMessageText-Input {
+    width: 85%;
+}
+
+.label {
+    margin: 8px;
+}
+
+#myMessageText-Name {
+    width: 79vw;
+    height: 30px;
+}
+
+.myMessageText-Input textarea {
+    min-width: 99.5%;
+    min-height: 8px;
+}
+
+.myButton {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#myMessageSender {
+    margin: 0 10px;
+    height: 28px;
+    width: 100%;
+
+}
+
+/* === NEW MESSAGE === */
+
+.newMessage{
+    margin: 10px;
+    width: 96%;
+
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.newMessageTitle {
+    padding: 10px;
+    margin: 0;
+
+    border-bottom: 1px solid black;
+
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.newMessageText {
+    padding: 10px;
+    margin: 0;
+
+    min-height: 40px;
+
+    font-size: 18px;
+}
+
+.myNewTitleDate {
+    padding: 10px;
+}
